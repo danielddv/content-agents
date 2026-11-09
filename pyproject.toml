@@ -1,12 +1,12 @@
 [project]
 name = "content-agents"
-version = "0.1.0"
-description = "Agentes de edición de contenido: vídeos para redes y textos de blog"
+version = "0.2.0"
+description = "Equipo de agentes de Claude Code para editar contenido: vídeos para redes y textos de blog"
 requires-python = ">=3.11"
 dependencies = []
 
 [project.optional-dependencies]
-video = ["moviepy", "openai-whisper"]
+video = ["faster-whisper"]
 panel = ["streamlit"]
 
 [build-system]
@@ -14,4 +14,4 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["core*", "agents*", "tools*"]
+include = ["core*", "tools*"]
